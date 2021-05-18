@@ -7,7 +7,7 @@ async function main() {
     // Abrir un Chromium browser con headless false para ver lo que sucede.
 
     const browser = await playwright.chromium.launch({
-        headless: false, slowMo: 500
+        headless: false, slowMo: 50
     });
     // Abrir una nueva página en el browser.
     const page = await browser.newPage();
