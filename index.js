@@ -1,10 +1,8 @@
-
 //Importar la librería de Playwright
-
 const playwright = require('playwright');
 
 async function main() {
-    // Abrir un Chromium browser con headless false para ver lo que sucede.
+    // Abrir un Chromium browser con headless false para ver lo que sucede. SlowMo 50 según solicitado.
 
     const browser = await playwright.chromium.launch({
         headless: false, slowMo: 50
@@ -26,5 +24,4 @@ async function main() {
     // Cerrar el browser.
     await browser.close();
 }
-
 main();
